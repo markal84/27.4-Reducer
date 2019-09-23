@@ -1,0 +1,22 @@
+{
+  "name": "27.4-reducer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markal84/27.4-Reducer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markal84/27.4-Reducer/issues"
+  },
+  "homepage": "https://github.com/markal84/27.4-Reducer#readme",
+  "dependencies": {
+    "uuid": "^3.3.3"
+  }
+}
