@@ -1,4 +1,4 @@
-/*** In this exercise we are assuming that generated id = 1 ***/
+import uuid from uuid;
 
 
 const ADD_COMMENT = 'ADD_COMMENT';
@@ -14,7 +14,7 @@ function addComment(text) {
     return {
         type: ADD_COMMENT,
         text,
-        id: 1 // generated comment id
+        id: uuid.v4()
     }
 }
 
@@ -24,7 +24,7 @@ function addComment(text) {
 function editComment(text, id) {
     return {
         type: EDIT_COMMENT,
-        id, // id we want to edit
+        id,
         text
     }
 }
@@ -35,7 +35,7 @@ function editComment(text, id) {
 function removeComment(id) {
     return {
         type: REMOVE_ACTION,
-        id, // id we want to remove
+        id, 
         text: 'comment removed'
     }
 }
