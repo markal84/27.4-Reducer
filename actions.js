@@ -3,7 +3,7 @@ import uuid from uuid;
 
 const ADD_COMMENT = 'ADD_COMMENT';
 const EDIT_COMMENT = 'EDIT_COMMENT';
-const REMOVE_ACTION = 'REMOVE_ACTION';
+const REMOVE_COMMENT = 'REMOVE_COMMENT';
 const THUMBS_UP = 'THUMBS_UP';
 const THUMBS_DOWN = 'THUMBS_DOWN';
 
@@ -34,7 +34,7 @@ function editComment(text, id) {
 
 function removeComment(id) {
     return {
-        type: REMOVE_ACTION,
+        type: REMOVE_COMMENT,
         id, 
         text: 'comment removed'
     }
@@ -58,3 +58,10 @@ function thumbsDown(id){
         id
     }
 }
+
+
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const EDIT_COMMENT = 'EDIT_COMMENT';
+export const REMOVE_COMMENT = 'REMOVE_COMMENT';
+export const THUMBS_UP = 'THUMBS_UP';
+export const THUMBS_DOWN = 'THUMBS_DOWN';
